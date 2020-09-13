@@ -1,0 +1,92 @@
+.first, .second
+{  
+  width: 100%;
+  min-height: 550px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.first, .second
+{
+  padding-top: 50px;
+}
+
+.second {
+  height: 600px;
+  position: relative;
+  margin-top: 50px;
+}
+
+.second p:first-child {
+  font-size: 34px;
+  color: #fff;
+  position: absolute;
+  bottom: 100px;
+  left: 10%;
+}
+
+.second p:last-child {
+  font-size: 18px;
+  color: #fff;
+  position: absolute;
+  bottom: 80px;
+  left: 10%;
+}
+
+.second-mob p:first-child {
+  font-size: 24px;
+  width: 80%;
+  text-align: center;
+  color: #fff;
+  position: absolute;
+  bottom: 40px;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+.second-mob p:last-child {
+  width: 80%;
+  font-size: 16px;
+  text-align: center;
+  color: #fff;
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+.first{background-image: url(../assets/imgs/parallax.png);}
+.second{background-image: url(../assets/imgs/front.png);}
+
+.first-mob{background-image: url(../assets/imgs/Grupo\ 113.png);}
+.second-mob{background-image: url(../assets/imgs/Grupo\ 116.png);}
+
+.civic-mob {
+  display: none;
+  height: 300px;
+}
+
+.first-mob {
+  height: 430px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+@media (max-width: 768px) {
+  .civic-mob {
+    display: block;
+  }
+
+  .civic{
+    display: none;
+  }
+
+  .first-mob {
+    height: 100%;
+  }
+
+  .second-mob {
+    position: relative;
+    height: 100%;
+    margin-bottom: 50px;
+  }
+}
